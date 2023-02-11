@@ -40,8 +40,8 @@ data <- data %>% select(-Doors)
 data$Cylinders = as.integer(data$Cylinders)
 
 
-#Il faudra changer engine entre la cylindrée et le turbo
-#Model et manufacturer sont à aussi à traiter
-#Leather integer à passer en boolean
+#Il faudra dans engine.volume séparer le chiffre du turbo et mettre turbo dans une nouvelle colonne en booleen
+#Model et manufacturer sont à aussi à traiter car il y a des doublons (regarder sur excel les doublons)
+#Leather.interrior à passer en boolean les 'Yes' et 'No'
 
 str(data)
